@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout Test</title>
+<link href="css/checkout.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="carrito" class="container_general">
+	<table class="tab_items">
+	  <tr class="head_table">
+		<th>Producto</th>
+		<th>Nombre</th>
+		<th>Cantidad</th>
+		<th>Precio</th>
+	  </tr>
+	  <tr>
+		<td><img src="imgs/Asus.jpg"></td>
+		<td>ASUS - ZenPad Z300M-A2-GR<br><small>16GB, Tableta de tamaño completo, IEEE 802.11n, Android, Pizarra, Android 6.0, Negro, Gris</small></td>
+		<td>2</td>
+		<td>$3,380.95</td>
+	  </tr>	  
+	  <tr>
+		<td><img src="imgs/Lenovo.jpg"></td>
+		<td>Lenovo - TAB3 Essential - ZA0R0029US<br><small>7" Android Tablet</small></td>
+		<td>1</td>
+		<td>$1,495.31</td>
+	  </tr>
+	  <tr>
+		<td><img src="imgs/Star_wars.jpg"></td>
+		<td>Star Wars - Figuras de Acción<br><small>Star Wars Black Series, AT-AT Driver, 6"</small></td>
+		<td>1</td>
+		<td>$449.00</td>
+	  </tr>
+	  <tr class="result">
+		<td></td>
+		<td></td>
+		<td>Total</td>
+		<td>$8,706.21</td>
+	  </tr>	  
+	</table>
+	<div id="btn_carrito" class="boton">Continuar</div>
+</div>
+
+<div id="datos" class="container_general">
+	<p><b>Datos</b><br>Empresa X Y Z </p>
+	<p><b>Dirección</b>
+		<br>Calle Río Lerma 4, Piso 6
+		<br>Colonia Cuauhtémoc
+		<br>CP 53000
+		<br>Ciudad de México </p>
+	<div class="boton boton_inactivo">Editar o agregar dirección</div>
+	<div id="btn_datos" class="boton">Continuar</div>
+		
+</div>
+
+<div id="pagos" class="container_general">
+
+	<div class="accordion">CREDIT CARD</div>
+		<div class="panel creditCardForm">
+			
+            <div class="payment">
+                <form>
+                    <div class="form-group" id="card-number-field">
+                        <label for="cardNumber">Numero de tarjeta</label>
+                        <input type="text" class="form-control" id="cardNumber">
+                    </div>
+                    <div class="form-group owner">
+                        <label for="owner">Nombre</label>
+                        <input type="text" class="form-control" id="owner">
+                    </div>
+                    <div class="form-group CVV">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control" id="cvv">
+                    </div>                    
+                    
+                    <div class="form-group" id="expiration-date">
+                        <label>Fecha vencimiento</label>
+                        <select>
+                            <option value="01">Enero</option>
+                            <option value="02">Febrero </option>
+                            <option value="03">Marzo</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Mayo</option>
+                            <option value="06">Junio</option>
+                            <option value="07">Julio</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Septiembre</option>
+                            <option value="10">Octubre</option>
+                            <option value="11">Marzo</option>
+                            <option value="12">Abril</option>
+                        </select>
+                        <select>
+                            <option value="16"> 2016</option>
+                            <option value="17"> 2017</option>
+                            <option value="18"> 2018</option>
+                            <option value="19"> 2019</option>
+                            <option value="20"> 2020</option>
+                            <option value="21"> 2021</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="credit_cards">
+                        <img src="imgs/visa.jpg" id="visa">
+                        <img src="imgs/mastercard.jpg" id="mastercard">
+                        <img src="imgs/amex.jpg" id="amex">
+                    </div>
+                </form>
+            </div>
+			
+		</div>
+
+	<div class="accordion">PAY PAL</div>
+	<div class="panel"><img src="https://www.paypalobjects.com/webstatic/en_US/developer/docs/lipp/loginwithpaypalbutton.png" alt="PayPal Checkout"></div>
+
+	<div class="accordion">PAGO EN EFECTIVO Y OXXO</div>
+	<div class="panel"><p>	<b>Folio:</b> 1234567890<br>
+							<b>Cuenta:</b> 12345678901234<br>
+							<b>Banco:</b> Citibanamex<br>
+							<b>Nombre:</b> Empresa carrito compras</p> </div>
+
+	<div id="btn_pagos" class="boton">Continuar</div>
+</div>
+
+<div id="felicidades" class="container_general">
+	<h1>Felicidades tu compra se realizo con éxito</h1>
+	<p class="texto_carrito">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		
+</div>
+
+
+</body>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/actions.js"></script>
+<script src="js/jquery.payform.min.js"></script>
+
+</html>

@@ -1,0 +1,187 @@
+body {
+	background-color: #f5f6f7;
+	font-family: Helvetica, Arial, "sans-serif";
+}
+
+small {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.container_general {
+	margin: 0 auto;
+	width: auto;
+	max-width: 970px;
+	height: auto;
+	box-shadow: 2px 2px 8px 0px #ccc;
+	border-radius: 8px;
+	background-color: white;
+	overflow: auto;
+	padding: 20px;
+	
+}
+
+.tab_items {
+	width: 100%;
+	text-align: left;
+    border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+tr {
+	
+}
+
+td, th {
+	padding: 20px;
+    border: 1px solid #eeeeee;
+	display: block;
+}
+
+.head_table {
+	display: none;
+}
+
+th {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.result {
+	background-color: #eeeeee;
+}
+
+.boton {
+	background-color: #7ED321;
+	width: 88%;
+	padding: 20px;
+	text-align: center;
+	color: #ffffff;
+	float: right;
+	cursor: pointer;
+}
+
+.boton:hover {
+	opacity: .6;
+	transition: 0.4s;
+}
+
+.boton_inactivo {
+	float:none;
+	background-color: #cccccc;
+}
+
+p {
+	font-weight: 300;
+}
+
+div.accordion {
+ background-color: #eee;
+ color: #444;
+ cursor: pointer;
+ padding: 18px;
+ text-align: left;
+ border: none;
+ outline: none;
+ transition: 0.4s;
+ margin-bottom:10px;
+}
+
+div.accordion.active, div.accordion:hover {
+ background-color: #ddd;
+}
+
+div.accordion:after {
+ content: '\2795';
+ font-size: 13px;
+ color: #777;
+ float: right;
+ margin-left: 5px;
+}
+
+div.accordion.active:after {
+ content: "\2796";
+}
+
+div.panel {
+ padding: 0 18px;
+ background-color: white;
+ max-height: 0;
+ overflow: hidden;
+ transition: 0.4s ease-in-out;
+ opacity: 0;
+ margin-bottom:10px;
+}
+div.panel.show {
+ opacity: 1;
+ max-height: 500px;
+}
+
+
+.transparent {
+    opacity: 0.2;
+}
+
+.creditCardForm .payment {
+    font-size: 18px;
+    padding: 10px 25px;
+    width: 300px;
+}
+
+.creditCardForm .owner {
+    width: 300px;
+}
+
+.creditCardForm .CVV {
+    width: 100px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	font-size: 16px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	font-size: 16px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+h1 {
+	text-align: center;	
+}
+
+
+@media (min-width: 768px) {
+
+.head_table {
+	display:table-row;
+}
+	
+td, th {
+	padding: 20px;
+    border: 1px solid #eeeeee;
+	display: table-cell;
+}
+	
+.boton {
+	width: 200px;
+}
